@@ -41,3 +41,13 @@ print('shuf4 = shuf1 * 2\t\t',shuf4)
 # shuf4 = shuf1 - shuf2 # Subtract two list
 # print('shuf4 = shuf1 - shuf2\t\t',shuf4)
 ## Err = TypeError: unsupported operand type(s) for -: 'list' and 'list'
+
+stringX = '   Halloween  '
+print('stringX = ',stringX)
+ss = stringX.split('w') # Split string by space
+print(ss)
+ss = stringX.strip() # Remove space at the beginning and end of string
+print(ss)
+for x in ss:
+    if x != 'e':
+        print(x)
