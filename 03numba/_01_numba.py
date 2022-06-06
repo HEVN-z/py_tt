@@ -1,4 +1,4 @@
-from numba import jit, cuda, njit
+from numba import jit
 import time
 
 @jit
