@@ -6,7 +6,15 @@ from PyQt5 import uic
 class MyApp(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('08pyQT/gui.ui', self)
+        uic.loadUi('08pyQT/_02_gui.ui', self)
+        self.setWindowTitle('My App')
+        self.button.clicked.connect(self.sayHello)
+
+        # self.input.setText('Hello World')
+
+    def sayHello(self):
+        inputText = self.input.text()
+        self.output.setText('Hello {0}'.format(inputText))
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
