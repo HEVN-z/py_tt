@@ -6,4 +6,3 @@ print(x)
 
 x = np.random.random((10))
 print(x)
-
