@@ -13,11 +13,11 @@ widget=QWidget()
 
 web=QWebEngineView()
 web.history().clear()
-profile = QWebEngineProfile.defaultProfile()
-cookie_store = profile.cookieStore()
-cookie_store.deleteAllCookies()
+# profile = QWebEngineProfile.defaultProfile()
+# cookie_store = profile.cookieStore()
+# cookie_store.deleteAllCookies()
+QWebEngineProfile.defaultProfile().cookieStore().deleteAllCookies()
 web.load(QUrl("http://google.co.th"))
-
 verticalLayout=QVBoxLayout()
 verticalLayout.addWidget(web)
 
