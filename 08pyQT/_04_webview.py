@@ -7,6 +7,7 @@ app=QApplication(sys.argv)
 
 mainWindow=QMainWindow()
 mainWindow.setWindowIcon(QtGui.QIcon('08pyQT/google_icon.ico'))
+mainWindow.setGeometry(100,100,1280,720)
 widget=QWidget()
 
 web=QWebEngineView()
