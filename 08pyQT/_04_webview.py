@@ -1,10 +1,12 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow,QVBoxLayout,QWidget,QApplication
 from PyQt5.QtWebEngineWidgets import *
+from PyQt5 import QtGui
 from PyQt5.QtCore import QUrl
 app=QApplication(sys.argv)
 
 mainWindow=QMainWindow()
+mainWindow.setWindowIcon(QtGui.QIcon('08pyQT/google_icon.ico'))
 widget=QWidget()
 
 web=QWebEngineView()
